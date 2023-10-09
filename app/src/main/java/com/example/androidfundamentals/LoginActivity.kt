@@ -27,7 +27,7 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
-        tvHistory = findViewById(R.id.history)
+        tvHistory = findViewById(R.id.loginHistory)
 
         val btnToRegister: TextView = findViewById(R.id.btn_to_register)
         btnToRegister.setOnClickListener(this)
@@ -56,7 +56,7 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
             R.id.btn_login -> {
                 val intent = Intent(this@LoginActivity, MainActivity::class.java)
                 intent.putExtra("User", User(etUsername.text.toString(), etPassword.text.toString()))
-                startActivity(intent)
+                resultLauncher.launch(intent)
             }
         }
     }

@@ -28,6 +28,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         tvPassword.text = "ingat, password anda adalah $password"
 
         btnLogout = findViewById(R.id.btn_logout)
+        btnLogout.setOnClickListener(this)
     }
 
     override fun onClick(v: View) {

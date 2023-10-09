@@ -95,11 +95,11 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/history"
+        android:id="@+id/loginHistory"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Pesan"
+        android:text=""
         android:textColor="#717171"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
